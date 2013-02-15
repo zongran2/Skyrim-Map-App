@@ -20,15 +20,31 @@ var fusione = '1Nk80BH7CeROBXLRFBb1yfOI5c2EqOxVMhU-V9m4';
 function initialize() {
 	var mapGame = ['Game']
 	var myLatlng = new google.maps.LatLng(-10, 20);
-	var myOptions = {
-		center: myLatlng,
-		zoom: 1,
-		mapTypeControl: false,
-		streetViewControl: false,
-		panControl: false,
-		scaleControl: false,
-		zoomControl: true,
-	};
+    if(screen.width<768||screen.height<768){
+        var myOptions = {
+        center: myLatlng,
+        zoom: 2,
+        mapTypeControl: false,
+        streetViewControl: false,      
+        mapTypeControlOptions: {
+        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+	    position: google.maps.ControlPosition.BOTTOM_CENTER,
+            mapTypeId/*s*/: [/*'Bump',*/'Game']
+        }             
+      } 
+    }       
+    else {  
+        var myOptions = {
+        center: myLatlng,
+        zoom: 3,
+        mapTypeControl: false,
+        streetViewControl: false,      
+        mapTypeControlOptions: {
+	    position: google.maps.ControlPosition.BOTTOM_CENTER,
+            mapTypeId/*s*/: [/*'Bump',*/'Game']
+        }             
+      } 
+    }
 	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     google.maps.event.addListener(map, 'tilesloaded',  function(){
                                   document.getElementById("caricamento").style.display = 'none';

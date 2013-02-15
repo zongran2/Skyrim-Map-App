@@ -108,17 +108,14 @@ p {margin: 5px;}
 }
 .googft-info-window h2{ text-align:center; font-size:15px; }
 /*FUSION TABLE'S INFO WINDOWS stop*/ 
-/*
 
-#LOGOLO  {
-	position:absolute;
-	top:8px;
-	width:36px;
-	height:50px;
-	z-index:100;
-  background-image: url(./images/layout/ObliLogoM.png);
+@media only screen and (max-width: 350px)   {
+
+    #titoloz{
+	    font-size: 12px
+    }
 }
-*/
+
 /*For Landscape mode*/ 
 @media screen and (orientation:landscape)   {  
     #map_canvas  {
