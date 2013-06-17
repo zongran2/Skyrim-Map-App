@@ -4,6 +4,7 @@
 .ui-page {background: #000;}  
 .ui-li-has-count .ui-li-count {visibility:hidden}
 
+body { -ms-touch-action: none !important; /* DISABLE DOUBLE-TAP-ZOOM */ } 
 
 /******************[ BG Rosso per Bottoni ]******************/
 .ui-btn-active {

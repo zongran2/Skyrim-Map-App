@@ -1,3 +1,5 @@
+body { -ms-touch-action: none !important; /* DISABLE DOUBLE-TAP-ZOOM */ } 
+
 #bottom {
 	background-image:url(./images/imgshome/new/orizz_BOTTOM.png);
 	bottom:5px;
@@ -103,6 +105,22 @@
 
 	z-index:15
 }
+
+
+#tmapslink p{
+	margin-top: 100px !important;
+	text-align:center;
+ 	text-shadow:0 0 10px #fff,2px 2px 20px blue; 
+	z-index:15
+}
+#tmapslink p a{
+	color: rgba(255,255,255,0.8);
+	font-family: sans-serif;
+	font-size:1.5em;
+	text-decoration: none;
+	text-shadow:0 0 10px #fff,2px 2px 20px blue; 
+}
+
 
 * {
 	-webkit-tap-highlight-color:rgba(255,255,255,0)
