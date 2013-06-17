@@ -20,7 +20,10 @@
 	font-family: Helvetica, Arial, sans-serif  /*{global-font-family}*/;
 }
 
-
+.ui-selectmenu{
+  height: 600px !important;
+  overflow: auto !important; 
+}
 
 #listona{
 	text-indent: 4px;
