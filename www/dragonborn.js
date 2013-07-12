@@ -1,4 +1,4 @@
-var gameTypeOptions = {
+﻿var gameTypeOptions = {
 	getTileUrl: function(coord, zoom) {
 		var normalizedCoord = getNormalizedCoord(coord, zoom);
 		if (!normalizedCoord) {

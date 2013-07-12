@@ -1,4 +1,4 @@
-//////////////Type GAME START//////////////
+﻿//////////////Type GAME START//////////////
 var gameTypeOptions = {
 getTileUrl: function(coord, zoom) {
     var normalizedCoord = getNormalizedCoord(coord, zoom);
