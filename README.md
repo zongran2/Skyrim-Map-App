@@ -1,4 +1,4 @@
-Skyrim-Map-App
+Skyrim Map App
 ==============
 
 <strong>Skyrim Map</strong> allows you to discover remote locations around the realm of Skyrim from the Elder Scrolls Saga. A big screen layout and beautifully clean interface simplifies your life during the search of a specific spot. 
