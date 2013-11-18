@@ -1,0 +1,18 @@
+{
+  "name": "Skyrim Map",
+  "description": "Interactive map of Skyrim and Dragonborn",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/logo/logo16.png",
+    "30": "/logo/logo30.png",
+    "48": "/logo/logo48.png",
+    "60": "/logo/logo60.png",
+    "128": "/logo/logo.png",
+    "512": "/logo/logo512.png"
+  },
+  "developer": {
+    "name": "Leonardo Gandini",
+    "url": "http://leonardogandini.com"
+  },
+  "default_locale": "en"
+}
