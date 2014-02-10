@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>BS Json Test</title>
+<meta name="description" content=""/>
+<meta name="author" content="Leonardo Gandini" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/theme-classic/theme-classic.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
+
+
+</head>
+<script type="text/javascript">
+
+$(document).ready(function () {
+/*     var url="http://bel-sit.net/bsProva.php"; */
+    var url="prova.json";
+   
+    $.getJSON(url,function(json){
+        var tr;
+        for (var i = 0; i < json.length; i++) {
+            tr = $('<tr>');
+            tr.append("<td>" + json[i].idVino + "</td>");
+            tr.append("<td>" + json[i].ordine + "</td>");
+            tr.append("<td>" + json[i].parametro + "</td>");
+            tr.append("<td>" + json[i].valore + "</td>");
+            $('table').append(tr);
+        }$("#tabolla").table("refresh"); 
+    });
+
+
+});
+
+
+</script>
+
+<style >
+	.ui-table-reflow.ui-responsive {
+		display:inline-table !important;
+}
+</style>
+<body>
+<style>
+	
+	
+</style>
+
+<div data-role="page">
+  <div data-role="header" data-theme="d">
+  	<h1 id="titoloz" >BS Json Test</h1>
+  </div>
+
+
+
+
+<table id="tabolla" data-role="table" data-mode="reflow" class="ui-body-a ui-shadow table-stripe ui-responsive" data-column-popup-theme="a">
+   <thead>
+    <tr>
+        <th data-priority="1">ID Vino</th>
+        <th data-priority="2">Ordine</th>
+        <th data-priority="2">Parametro</th>
+        <th data-priority="3">Valore</th>
+    </tr>
+   </thead>
+    <tbody class="ui-body-c"></tbody>
+    
+</table>
+
+
+
+
+
+</div>
+</body>
+</html>

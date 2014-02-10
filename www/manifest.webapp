@@ -16,5 +16,6 @@
     "name": "Leonardo Gandini",
     "url": "http://leonardogandini.com"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "fullscreen": true
 }
